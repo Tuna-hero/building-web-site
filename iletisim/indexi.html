@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Gelişmiş Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="stylesi.css">
+
+</head>
+<body>
+
+     <header>
+    <div class="brand-logo">
+      <img src="image1.png" alt="Logo">
+      <div class="hamburger-btn" id="menuToggle">☰</div>
+    </div>
+    <nav class="menu-items" id="navLinks">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../projelerimiz/indexp.html">Projelerimiz</a>
+        <a href="../hakkimizda/indexh.html">Hakkımızda</a>
+        <a href="../iletisim/indexi.html">İletişim</a>
+        <a href="../galeri/indexg.html">Galeri</a>
+         <a href="../sss/indexs.html">S.S.S</a>
+    </nav>
+  </header>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="form-card bg-white">
+        <h3 class="mb-4 text-center">İletişim Formu</h3>
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="ad" class="form-label">Ad</label>
+              <input type="text" class="form-control" id="ad" placeholder="Adınız">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="soyad" class="form-label">Soyad</label>
+              <input type="text" class="form-control" id="soyad" placeholder="Soyadınız">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-posta Adresi</label>
+            <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
+          </div>
+          <div class="mb-3">
+            <label for="konu" class="form-label">Konu</label>
+            <select class="form-select" id="konu">
+              <option selected disabled>Bir konu seçin</option>
+              <option>Genel Soru</option>
+              <option>Destek Talebi</option>
+              <option>Geri Bildirim</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mesaj" class="form-label">Mesaj</label>
+            <textarea class="form-control" id="mesaj" rows="4" placeholder="Mesajınızı yazın..."></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="onay">
+            <label class="form-check-label" for="onay">
+              Verdiğim bilgilerin doğru olduğunu kabul ediyorum.
+            </label>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-custom btn-lg">Gönder</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sosyal-medya">
+  <h3>Bizi Takip Edin</h3>
+  <div class="ikonlar">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card map-card">
+    <div class="map-title text-center">
+      📍  Konumuz
+    </div>
+    <iframe 
+      class="map-frame"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12004.55956542595!2d32.657168688269024!3d41.21872184623106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408354ac4492953f%3A0xab3b48ed0392a743!2sKarab%C3%BCk%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1747602855361!5m2!1str!2str"
+      loading="lazy"
+      allowfullscreen=""
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+
+<footer class="alt-footer">
+  <div class="alt-container">
+    <div class="alt-left">
+      <div class="alt-logo-section">
+        <div class="alt-company-name">
+          <strong>ARTAND</strong><br />
+        </div>
+      </div>
+
+      <div class="alt-copy">
+        <p>ARTAND 2024</p>
+        <p>BU SİTENİN TÜM HAKLARI <a href="#">TUNA</a> YA AİTİR</p>
+      </div>
+    </div>
+
+    <div class="alt-center">
+      <p>
+        100.yıl Mahalesi, üniversite yolu.<br />
+        No:1 karabük üniversitesi bmyo<br />
+        MERKEZ / KARABÜK
+      </p>
+      <p>
+        Telefon<br />
+        +90 218 333 22 22<br />
+        +90 218 345 117 333
+      </p>
+    </div>
+
+    <div class="alt-right">
+      <h4>Menu</h4>
+      <ul class="alt-nav-links">
+        <li><a href="#">Projelerimiz</a></li>
+        <li><a href="#">Öncesi Sonrası</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+        document.getElementById("menuToggle").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+</script>
+</body>
+</html>
