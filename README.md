@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ### Proje Dahilinde Poster Hazırlanmıştır:
 
-![Poster](poster/poster.pdf)
+<embed src="poster/poster" width="100%" height="600px" type="application/pdf">
 
 ---
 
